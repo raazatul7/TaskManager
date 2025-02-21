@@ -6,12 +6,15 @@ import RootRealmProvider from '../providers/Realm';
 
 const RootLayout = () => {
     return (
-        <ThemeProvider value={DarkTheme}>
-            <RootRealmProvider>
-                <Stack screenOptions={{}} />
-            </RootRealmProvider>
-            <StatusBar style='dark' />
-        </ThemeProvider>
+        <>
+            <ThemeProvider value={DarkTheme}>
+                <RootRealmProvider>
+                    <Stack screenOptions={{}} />
+                </RootRealmProvider>
+
+            </ThemeProvider>
+            <StatusBar style='light' />
+        </>
     )
 }
 
